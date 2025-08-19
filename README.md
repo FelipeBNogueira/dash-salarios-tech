@@ -1,6 +1,6 @@
 # 📊 Dashboard de Salários na Área de Dados
 
-[![Demo – Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](<SUA_URL_PUBLICA>)
+[![Demo – Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([<SUA_URL_PUBLICA>](https://dash-salaries-tech.streamlit.app/))
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B.svg?logo=streamlit&logoColor=white)](#)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
