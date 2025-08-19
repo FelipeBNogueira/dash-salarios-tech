@@ -61,11 +61,11 @@ O carregamento de dados é otimizado com `@st.cache_data`.
 
 | Visão Geral | Distribuições |
 |---|---|
-| ![Dashboard – Visão Geral](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-1.png) | ![Dashboard – Distribuições](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-2.png) |
+| ![Dashboard – Visão Geral](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-01.png) | ![Dashboard – Distribuições](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-02.png) |
 
 | Geografia | Analítico |
 |---|---|
-| ![Dashboard – Geografia](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-3.png) | ![Dashboard – Analítico](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-4.png) |
+| ![Dashboard – Geografia](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-03.png) | ![Dashboard – Analítico](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-04.png) |
 
 ## 🧱 Arquitetura & Dados
 
