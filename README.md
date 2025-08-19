@@ -65,7 +65,7 @@ O carregamento de dados é otimizado com `@st.cache_data`.
 
 | Geografia | Analítico |
 |---|---|
-| ![Dashboard – Analítico](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-3.png) | ![Dashboard – Geografia](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-4.png) |
+| ![Dashboard – Geografia](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-3.png) | ![Dashboard – Analítico](https://raw.githubusercontent.com/FelipeBNogueira/dash-salarios-tech/main/assets/capt-4.png) |
 
 ## 🧱 Arquitetura & Dados
 
