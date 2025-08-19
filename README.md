@@ -1,12 +1,13 @@
 # 📊 Dashboard de Salários na Área de Dados
 
-[![Demo – Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([<SUA_URL_PUBLICA>](https://dash-salaries-tech.streamlit.app/))
+[![Demo – Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dash-salaries-tech.streamlit.app/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B.svg?logo=streamlit&logoColor=white)](#)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Stars](https://img.shields.io/github/stars/FelipeBNogueira/dash-salarios-tech?style=social)](https://github.com/FelipeBNogueira/dash-salarios-tech/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/FelipeBNogueira/dash-salarios-tech)](https://github.com/FelipeBNogueira/dash-salarios-tech/commits)
 [![Repo Size](https://img.shields.io/github/repo-size/FelipeBNogueira/dash-salarios-tech)](https://github.com/FelipeBNogueira/dash-salarios-tech)
+
 
 **Análise interativa de salários na área de dados** (USD/BRL), com filtros por ano, senioridade, contrato, tamanho da empresa, busca por cargo e visualizações com Plotly.  
 Construído com **Streamlit + Pandas + Plotly**.
