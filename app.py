@@ -87,27 +87,22 @@ sufixo_moeda = moeda
 st.title("🎲 Dashboard de Análise de Salários na Área de Dados")
 st.markdown("Explore os dados salariais nos últimos anos. Use os filtros ao lado para refinar.")
 
-# ── KPIs ───────────────────────────────────────────────────────────────────────
+# ── KPIs (apenas 4 cards) ──────────────────────────────────────────────────────
 st.subheader(f"Métricas gerais (salário anual em {sufixo_moeda})")
 if df_filtrado.empty:
     st.warning("Nenhum dado com os filtros atuais.")
     st.stop()
 
-salario_medio       = df_filtrado["valor"].mean()
-salario_mediano     = df_filtrado["valor"].median()
-salario_p90         = df_filtrado["valor"].quantile(0.90)
-salario_max         = df_filtrado["valor"].max()
-total_registros     = len(df_filtrado)
-cargo_mais_freq     = df_filtrado["cargo"].mode().iat[0]
-n_cargos            = df_filtrado["cargo"].nunique()
+salario_medio   = df_filtrado["valor"].mean()
+salario_maximo  = df_filtrado["valor"].max()
+total_registros = int(df_filtrado.shape[0])
+cargo_mais_freq = df_filtrado["cargo"].mode().iat[0]
 
-c1, c2, c3, c4, c5, c6 = st.columns(6)
+c1, c2, c3, c4 = st.columns(4)
 c1.metric("Salário médio", f"{salario_medio:,.0f} {sufixo_moeda}")
-c2.metric("Mediana", f"{salario_mediano:,.0f} {sufixo_moeda}")
-c3.metric("P90", f"{salario_p90:,.0f} {sufixo_moeda}")
-c4.metric("Salário máximo", f"{salario_max:,.0f} {sufixo_moeda}")
-c5.metric("Registros", f"{total_registros:,}")
-c6.metric("Cargo mais frequente", cargo_mais_freq)
+c2.metric("Salário máximo", f"{salario_maximo:,.0f} {sufixo_moeda}")
+c3.metric("Total de registros", f"{total_registros:,}")
+c4.metric("Cargo mais frequente", cargo_mais_freq)
 
 st.markdown("---")
 
@@ -142,7 +137,7 @@ with aba1:
     )
     col1.plotly_chart(fig1, use_container_width=True)
 
-    # Mediana por ano e senioridade (com rótulos nos pontos)
+    # Mediana por ano e senioridade (mantida, pois é gráfico analítico)
     mediana_ano_senior = (
         df_filtrado.groupby(["ano", "senioridade"], as_index=False)["valor"].median()
     )
@@ -169,11 +164,11 @@ with aba2:
     )
     fig3.update_traces(
         texttemplate='%{y:,}',
-        textposition='outside',     # FORA das barras
-        textfont_color='white',     # cor BRANCA
+        textposition='outside',
+        textfont_color='white',
         marker_line_width=1,
         marker_line_color="white",
-        cliponaxis=False            # evita cortar os rótulos fora do plot
+        cliponaxis=False
     )
     fig3.update_layout(
         title_x=0.1,
@@ -181,11 +176,11 @@ with aba2:
         yaxis=dict(showticklabels=False),
         uniformtext_minsize=10,
         uniformtext_mode='show',
-        margin=dict(t=90)           # espaço extra no topo para caber os rótulos
+        margin=dict(t=90)
     )
     col3.plotly_chart(fig3, use_container_width=True)
 
-    # Boxplot por senioridade (mantém apenas hover)
+    # Boxplot por senioridade
     fig4 = px.box(
         df_filtrado, x="senioridade", y="valor", points="outliers",
         title=f"Distribuição por senioridade ({sufixo_moeda})",
